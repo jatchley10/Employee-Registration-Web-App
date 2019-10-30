@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Register for a Course</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="Scripts/jquery.js"></script> 
+        <script src="Scripts/postAttendees.js"></script>
+        <link rel="stylesheet" type="text/css" href="Styles/style.css">
+    </head>
+    <body>
+        <a href="index.html">Search Registrations</a>&nbsp;
+        <a href="registration.html">Register Attendee</a>
+        <div id="options">
+            </br>
+            <p style="display: inline">First Name: </p><input type="text" onchange="reg.genFullName()" id="fName"/>
+            </br>
+            <p style="display: inline">Last Name: </p><input type="text" onchange="reg.genFullName()" id="lName"/>
+            </br>
+            <p style="display: inline">How your name will be displayed:</p><input type="text" id="disName"/>
+            </br>
+            Select Session
+            <select>
+                <option>Session 1</option>
+                <option>Session 2</option>
+                <option>Session 3</option>
+                <option>Session 4</option>
+            </select>
+            </br>
+            <input type="button" value="Submit" onclick="reg.postEmps();"/>
+        </div>
+        </br>
+        </br>
+        <div id="output">
+            
+        </div>
+    </body>
+</html>
